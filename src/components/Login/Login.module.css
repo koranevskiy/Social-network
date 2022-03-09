@@ -1,0 +1,76 @@
+h1{
+    text-align: center;
+    margin: 20px 0 30px 0;
+    font-size: 24px;
+}
+.form{
+    width: 60%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 10px;
+
+}
+.formLogin{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.data{
+    margin-bottom: 20px;
+    flex: 0 1 60%;
+}
+.dataItem{
+    margin-bottom: 20px;
+}
+.dataItem:last-child{
+    margin: 0;
+}
+.dataItem input{
+    padding: 5px;
+    border-radius: 4px;
+    border: 2px solid rgba(53,70,183,0.65);
+}
+.dataItem input:focus{
+    box-shadow:3px 3px 10px rgba(32,161,183,0.65);
+    border: 2px solid rgba(42, 51, 126, 0.65);
+    padding: 10px;
+}
+
+.login{
+    flex: 0 1 20%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.remember{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 0 1 50%;
+}
+.remember input{
+    flex: 0 1 15%;
+}
+.remember div{
+    flex: 0 1 60%;
+}
+.btn{
+    flex: 0 1 40%;
+}
+.btn button{
+    background-color: rgba(42,61,183,0.65);
+    border: 0;
+    color: #e7e4e4;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 3px;
+}
+.dangerous{
+    color: red;
+}
+.dataItem.danger input{
+    border: 2px solid red;
+}

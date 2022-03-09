@@ -1,0 +1,139 @@
+.structDialog{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px 30px 30px;
+
+}
+.dialogs{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    margin-bottom: 10px;
+    gap: 25px;
+}
+.dialogsItem{}
+.dialog{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+.dialog:last-child{
+    margin: 0;
+}
+.dialogImg{
+    flex: 0 0 40px;
+
+
+}
+.dialogImg img{
+    width: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.dialog a{
+    color: #232320;
+    text-decoration: none;
+    font-size: 20px;
+}
+.dialogContent{
+    flex: 0 1 80%;
+    padding: 0 20px;
+}
+.dialog.active{
+    color: gold;
+}
+.messages{
+    background-color: #ff9666;
+    border: 3px solid black;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+    height: 450px;
+}
+.messages::before{
+    content: "";
+    width: 1px;
+    height: 100%;
+    border-left: 2px solid #9c6af3;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 0;
+    left: 0;
+}
+.message{
+    color: darkgreen;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.message:last-child{
+    margin: 0;
+}
+.messageAva{
+    flex: 0 0 40px;
+    align-self: center;
+}
+.messageAva img{
+    border-radius: 50%;
+    width: 100%;
+    object-fit: contain;
+}
+.messageContent{
+    flex: 0 1 87%;
+    align-self: center;
+    padding: 0 20px;
+    position: relative;
+}
+.messageContent span{
+    width: 40%;
+    min-width: 30%;
+    padding: 20px;
+    display: block;
+    border: 2px solid gray;
+    border-radius: 7px;
+}
+.messageContent::before{
+    width: 30px;
+    height: 30px;
+    content: "";
+    position: absolute;
+    border-left: 2px solid gray;
+    border-top: 2px solid gray;
+    transform: rotate(-45deg) translate(-100%, -50%);
+}
+.newMessage{
+    width: 73.35%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+.newMessage textarea{
+    margin-bottom: 10px;
+    flex: 0 1 90px;
+    resize: none;
+    padding: 10px;
+    border: 3px solid #575555;
+    box-shadow: #575555 3px 1px 10px;
+}
+.newMessage button{
+    width: 20%;
+    flex: 0 0 40px;
+    align-self: flex-end;
+    background-color: #575555;
+    border-radius: 10%;
+    font-size: 18px;
+}
+@media (max-width: 1100px) {
+
+    .messageContent::before{
+        display: none;
+    }
+}
+@media (max-width: 1000px) {
+    .messages::before{
+        display: none;
+    }
+}

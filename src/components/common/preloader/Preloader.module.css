@@ -1,0 +1,7 @@
+.preloader{
+    width: 30px;
+}
+.preloader img{
+    width: 100%;
+    object-fit: contain;
+}

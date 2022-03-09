@@ -1,0 +1,31 @@
+.my-post{
+
+}
+.new-post{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 30px;
+    min-height: 135px;
+}
+.new-post-button{
+    width: 100px;
+    align-self: flex-end;
+
+}
+.btn{
+    font-size: 20px;
+    background-color: goldenrod;
+
+}
+.post-title{
+    font-size: 24px;
+    margin: 0 0 20px 30px;
+
+}
+.new-post textarea{
+    flex: 0 0 100px;
+    resize: none;
+    padding: 0 10px;
+    border: 2px solid black;
+}

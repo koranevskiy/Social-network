@@ -1,0 +1,36 @@
+.pagination{
+    max-width: 400px;
+    margin-left: 35px;
+}
+.paginationScroll{
+    width: 9999px;
+    margin-bottom: 5px;
+}
+.pagination span{
+    font-size: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+
+}
+.currentPage{
+    color: #46463a;
+    font-weight: 900;
+    font-size: 26px;
+}
+.buttons{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.buttonPos{
+    flex: 0 1 15%;
+}
+.buttonPos button{
+    border: 0;
+    background-color: rgba(74, 71, 211, 0.91);
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #07ff7f;
+    border-radius: 3px;
+}
